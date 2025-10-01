@@ -678,8 +678,26 @@ img, video {
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .profile-img {
     display: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .about-section .row {
+    flex-direction: column; /* row ki jagah column */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section .col-lg-6 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile-image {
+    max-width: 350px; /* mobile pe bhi bari rahe */
+    margin-top: 20px; /* text se gap */
   }
 }
