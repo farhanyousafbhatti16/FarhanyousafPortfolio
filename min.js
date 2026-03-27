@@ -1,18 +1,24 @@
 /* FARHAN YOUSAF — LUXURY AGENCY PORTFOLIO JS */
 
+// ═══ DETECT MOBILE ═══
+var isMobile = window.innerWidth <= 768;
+
 // ═══ LOADER ═══
 (function(){
   var loader = document.getElementById('loader');
   var fill = document.getElementById('loaderFill');
   var p = 0;
+  // Faster on mobile
+  var speed = isMobile ? 80 : 150;
+  var increment = isMobile ? 25 : 15;
   function tick(){
-    p += Math.random() * 15 + 5;
+    p += Math.random() * increment + 8;
     if(p > 100) p = 100;
     fill.style.width = p + '%';
-    if(p < 100){ setTimeout(tick, 150 + Math.random() * 200); }
+    if(p < 100){ setTimeout(tick, speed + Math.random() * 100); }
     else { setTimeout(function(){
-      gsap.to(loader, { opacity: 0, duration: 0.6, ease: 'power2.inOut', onComplete: function(){ loader.style.display = 'none'; heroEnter(); }});
-    }, 400); }
+      gsap.to(loader, { opacity: 0, duration: 0.4, ease: 'power2.inOut', onComplete: function(){ loader.style.display = 'none'; heroEnter(); }});
+    }, 200); }
   }
   tick();
 })();
@@ -25,15 +31,19 @@ function heroEnter(){
     .from('.hero-float-card', { opacity: 0, scale: 0.8, y: 20, duration: 0.8, stagger: 0.15 }, '-=0.5');
 }
 
-// ═══ GSAP SCROLL ═══
+// ═══ GSAP SCROLL — Optimized ═══
 gsap.registerPlugin(ScrollTrigger);
 
+// Simpler animations on mobile
+var animDuration = isMobile ? 0.5 : 0.9;
+var animDistance = isMobile ? 30 : 50;
+
 gsap.utils.toArray('.sec-tag, .sec-h2, .contact-h2, .contact-p').forEach(function(el){
-  gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 85%' }, y: 50, opacity: 0, duration: 0.9, ease: 'power4.out' });
+  gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 90%' }, y: animDistance, opacity: 0, duration: animDuration, ease: 'power4.out' });
 });
 
 gsap.utils.toArray('.service-card, .journey-card, .yt-card, .cd-item, .cf').forEach(function(el, i){
-  gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, y: 60, opacity: 0, duration: 0.8, delay: (i % 4) * 0.08, ease: 'power4.out' });
+  gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 92%' }, y: animDistance, opacity: 0, duration: animDuration, delay: isMobile ? 0 : (i % 4) * 0.08, ease: 'power4.out' });
 });
 
 // ═══ NAV ═══
@@ -94,7 +104,7 @@ if(wg){
   wg.innerHTML = h;
   setTimeout(function(){
     gsap.utils.toArray('.work-card').forEach(function(el,i){
-      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 90%' }, y: 50, opacity: 0, duration: 0.7, delay: (i%3)*0.1, ease: 'power4.out' });
+      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 92%' }, y: animDistance, opacity: 0, duration: animDuration, delay: isMobile ? 0 : (i%3)*0.1, ease: 'power4.out' });
     });
   }, 50);
 }
@@ -121,11 +131,14 @@ if(gg){
   var gh = '';
   gal.forEach(function(g){ gh += '<div class="gal-item '+g.cat+'"><img src="'+g.src+'" alt="'+g.alt+'" loading="lazy"></div>'; });
   gg.innerHTML = gh;
-  setTimeout(function(){
-    gsap.utils.toArray('.gal-item').forEach(function(el,i){
-      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 92%' }, y: 40, opacity: 0, scale: 0.96, duration: 0.6, delay: (i%4)*0.06, ease: 'power4.out' });
-    });
-  }, 100);
+  // Only animate gallery items on desktop — too many items lag on mobile
+  if(!isMobile){
+    setTimeout(function(){
+      gsap.utils.toArray('.gal-item').forEach(function(el,i){
+        gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 92%' }, y: 40, opacity: 0, scale: 0.96, duration: 0.6, delay: (i%4)*0.06, ease: 'power4.out' });
+      });
+    }, 100);
+  }
 }
 
 document.querySelectorAll('.gf').forEach(function(btn){
@@ -191,3 +204,20 @@ if(clearBtn){
 // ═══ YEAR ═══
 var yr = document.getElementById('currentYear');
 if(yr) yr.textContent = new Date().getFullYear();
+
+// ═══ YOUTUBE LITE — Load iframe only on click ═══
+document.querySelectorAll('.yt-thumb').forEach(function(thumb){
+  thumb.addEventListener('click', function(){
+    var parent = this.parentElement;
+    var ytId = parent.dataset.yt;
+    if(ytId){
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + ytId + '?autoplay=1';
+      iframe.title = 'YouTube Video';
+      iframe.allowFullscreen = true;
+      iframe.allow = 'autoplay';
+      parent.innerHTML = '';
+      parent.appendChild(iframe);
+    }
+  });
+});
