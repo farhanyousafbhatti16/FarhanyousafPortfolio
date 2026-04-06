@@ -1,382 +1,206 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!-- PRIMARY SEO -->
-  <title>Farhan Yousaf — Web Developer in Islamabad | Laravel, WordPress &amp; eCommerce Expert</title>
-  <meta name="description" content="Hire Farhan Yousaf — Professional Web Developer in Islamabad, Pakistan. I build fast, modern websites using Laravel &amp; WordPress for businesses in Pakistan &amp; the UK. 17+ projects delivered. Get a free quote today.">
-  <meta name="keywords" content="web developer islamabad, web developer pakistan, laravel developer, wordpress developer, ecommerce website developer, freelance web developer pakistan, hire web developer, website design islamabad, farhan yousaf, PHP developer, WooCommerce expert, SEO expert pakistan, web developer UK, website developer near me, best web developer pakistan, affordable web developer">
-  <meta name="author" content="Muhammad Farhan Yousaf">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow">
-  <link rel="canonical" href="https://farhanyousafportfolio.vercel.app/">
-
-  <!-- GEO TAGS -->
-  <meta name="geo.region" content="PK-IS">
-  <meta name="geo.placename" content="Islamabad">
-  <meta name="geo.position" content="33.6844;73.0479">
-  <meta name="ICBM" content="33.6844, 73.0479">
-
-  <!-- OPEN GRAPH / FACEBOOK -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://farhanyousafportfolio.vercel.app/">
-  <meta property="og:title" content="Farhan Yousaf — Web Developer | Laravel &amp; WordPress Expert">
-  <meta property="og:description" content="Professional Web Developer building fast, modern websites for businesses in Pakistan &amp; UK. Laravel, WordPress, eCommerce, SEO. 17+ projects delivered.">
-  <meta property="og:image" content="https://farhanyousafportfolio.vercel.app/picofme.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Farhan Yousaf Portfolio">
-  <meta property="og:locale" content="en_US">
-
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Farhan Yousaf — Web Developer | Laravel &amp; WordPress Expert">
-  <meta name="twitter:description" content="Professional Web Developer in Islamabad. Laravel, WordPress, eCommerce. 17+ projects. Hire me for your next website.">
-  <meta name="twitter:image" content="https://farhanyousafportfolio.vercel.app/picofme.png">
-
-  <!-- STRUCTURED DATA — JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Farhan Yousaf — Web Developer",
-    "alternateName": "Muhammad Farhan Yousaf",
-    "url": "https://farhanyousafportfolio.vercel.app/",
-    "image": "https://farhanyousafportfolio.vercel.app/picofme.png",
-    "description": "Professional Web Developer in Islamabad, Pakistan specializing in Laravel, WordPress, eCommerce, and SEO. Building modern websites for businesses in Pakistan and UK.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Islamabad",
-      "addressCountry": "PK"
-    },
-    "telephone": "+923325106196",
-    "email": "farhanyousafbhatti16@gmail.com",
-    "priceRange": "$$",
-    "areaServed": ["Pakistan", "United Kingdom", "Worldwide"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Web Development Services",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Website Development"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "eCommerce Store Development"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "WordPress Development"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laravel Web Applications"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Optimization"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Graphic Design"}}
-      ]
-    },
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=100008825046900",
-      "https://www.linkedin.com/in/farhan-yousaf-37a256251",
-      "https://github.com/farhanyousafbhatti16",
-      "https://www.youtube.com/@FarhanDevPortfolio"
-    ]
-  }
-  </script>
-
-  <!-- PERSON SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Muhammad Farhan Yousaf",
-    "jobTitle": "Web Developer",
-    "url": "https://farhanyousafportfolio.vercel.app/",
-    "image": "https://farhanyousafportfolio.vercel.app/picofme.png",
-    "email": "farhanyousafbhatti16@gmail.com",
-    "telephone": "+923325106196",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Islamabad",
-      "addressCountry": "PK"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Capital University of Science and Technology"
-    },
-    "knowsAbout": ["Laravel", "WordPress", "PHP", "MySQL", "WooCommerce", "JavaScript", "Vue.js", "Bootstrap", "SEO", "Graphic Design"],
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=100008825046900",
-      "https://www.linkedin.com/in/farhan-yousaf-37a256251",
-      "https://github.com/farhanyousafbhatti16"
-    ]
-  }
-  </script>
-
-  <!-- BREADCRUMB SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://farhanyousafportfolio.vercel.app/"},
-      {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://farhanyousafportfolio.vercel.app/#work"},
-      {"@type": "ListItem", "position": 3, "name": "Contact", "item": "https://farhanyousafportfolio.vercel.app/#contact"}
-    ]
-  }
-  </script>
-
-  <!-- PERFORMANCE -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="min.js" as="script">
-
-  <!-- FONTS & LIBS -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Farhan Yousaf — Web Developer in Islamabad | Laravel, WordPress &amp; eCommerce Expert</title>
+<meta name="description" content="Hire Farhan Yousaf — Professional Web Developer in Islamabad with 3+ years experience. I build fast, modern websites using Laravel &amp; WordPress. 17+ projects delivered.">
+<meta name="keywords" content="web developer islamabad,web developer pakistan,laravel developer,wordpress developer,ecommerce website developer,freelance web developer pakistan,hire web developer,farhan yousaf,PHP developer,WooCommerce expert,SEO expert pakistan,web developer UK,best web developer pakistan">
+<meta name="author" content="Muhammad Farhan Yousaf">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://farhanyousafportfolio.vercel.app/">
+<meta name="geo.region" content="PK-IS"><meta name="geo.placename" content="Islamabad">
+<meta property="og:type" content="website"><meta property="og:url" content="https://farhanyousafportfolio.vercel.app/">
+<meta property="og:title" content="Farhan Yousaf — Web Developer | 3+ Years Experience">
+<meta property="og:description" content="Professional Web Developer. Laravel, WordPress, eCommerce. 17+ live projects.">
+<meta property="og:image" content="https://farhanyousafportfolio.vercel.app/picofme.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Farhan Yousaf — Web Developer">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammad Farhan Yousaf","jobTitle":"Senior Web Developer","url":"https://farhanyousafportfolio.vercel.app/","email":"farhanbhatti644@gmail.com","telephone":"+923325106196","address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Capital University of Science and Technology"},"knowsAbout":["Laravel","WordPress","PHP","MySQL","WooCommerce","JavaScript","Vue.js","SEO"],"sameAs":["https://www.linkedin.com/in/farhan-yousaf-37a256251","https://github.com/farhanyousafbhatti16"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=General+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- PRELOADER -->
-<div class="loader" id="loader">
-  <div class="loader-inner">
-    <div class="loader-logo">F<span>.</span></div>
-    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
-    <div class="loader-tagline">Crafting Digital Experiences</div>
+<div class="pre" id="pre">
+  <div class="pre-box">
+    <div class="pre-browser">
+      <div class="pre-bar"><span class="pre-dot r"></span><span class="pre-dot y"></span><span class="pre-dot g"></span><span class="pre-url"><i class="fas fa-lock"></i> farhanyousaf.dev</span></div>
+      <div class="pre-body"><div class="pre-code" id="preCode"></div></div>
+    </div>
+    <div class="pre-progress"><div class="pre-fill" id="preFill"></div></div>
+    <div class="pre-info"><span id="preMsg">Loading assets...</span><span class="pre-pct" id="prePct">0%</span></div>
   </div>
 </div>
 
-<!-- ANIMATED BG -->
-<div class="bg-blobs">
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
-  <div class="blob b3"></div>
-</div>
+<!-- MESH GRADIENT BG -->
+<div class="mesh"></div>
 
 <!-- NAV -->
-<nav class="nav" id="nav" aria-label="Main navigation">
-  <div class="wrap">
-    <a href="#home" class="logo" aria-label="Farhan Yousaf - Home">Farhan<span>.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu"><span></span><span></span></button>
-    <div class="nav-links" id="navLinks" role="menubar">
-      <a href="#home" role="menuitem">Home</a>
-      <a href="#about" role="menuitem">About</a>
-      <a href="#work" role="menuitem">Work</a>
-      <a href="#gallery" role="menuitem">Gallery</a>
-      <a href="#contact" class="nav-cta" role="menuitem">Get in Touch</a>
-    </div>
+<nav class="nav" id="nav"><div class="wrap nav-flex">
+  <a href="#home" class="logo">Farhan<span>.</span></a>
+  <div class="nav-center" id="navLinks">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#experience">Journey</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
   </div>
-</nav>
+  <div class="nav-end">
+    <button class="toggle" id="themeBtn" aria-label="Toggle theme">
+      <div class="toggle-track"><div class="toggle-thumb"></div><div class="toggle-sun"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="toggle-moon"></div><div class="toggle-stars"><i></i><i></i><i></i></div></div>
+    </button>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</div></nav>
 
 <main>
-
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="wrap hero-wrap">
-    <div class="hero-left">
-      <div class="hero-pill an-up">
-        <span class="pill-dot"></span> Available for Projects
-      </div>
-      <h1 class="hero-h1">
-        <span class="h1-line"><span class="h1-word an-word">I build websites</span></span>
-        <span class="h1-line"><span class="h1-word an-word">that <em>grow</em></span></span>
-        <span class="h1-line"><span class="h1-word an-word">your business.</span></span>
+<section class="hero" id="home"><div class="wrap">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="badge an"><span class="badge-dot"></span>Available for Projects</div>
+      <h1 class="h1">
+        <span class="h1-line"><span class="h1-word an-w">Building digital</span></span>
+        <span class="h1-line"><span class="h1-word an-w"><em>experiences</em> that</span></span>
+        <span class="h1-line"><span class="h1-word an-w">drive results.</span></span>
       </h1>
-      <p class="hero-p an-up">I'm Farhan Yousaf — a professional web developer based in Islamabad, Pakistan, helping brands and businesses across Pakistan &amp; the UK launch stunning, high-performance websites that turn visitors into paying customers.</p>
-      <div class="hero-btns an-up">
-        <a href="#work" class="btn-primary"><span>See My Work</span><i class="fas fa-arrow-down"></i></a>
-        <a href="#contact" class="btn-secondary"><span>Let's Talk</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="2"/></svg></a>
+      <p class="hero-p an">I'm Farhan Yousaf — a web developer with <strong>3+ years</strong> of experience helping businesses across Pakistan &amp; UK launch websites that actually convert.</p>
+      <div class="hero-btns an">
+        <a href="#work" class="btn-fill"><span>View Projects</span><i class="fas fa-arrow-down"></i></a>
+        <a href="https://wa.me/923325106196?text=Hi%20Farhan!" target="_blank" class="btn-ghost"><i class="fab fa-whatsapp"></i><span>WhatsApp Me</span></a>
       </div>
-      <div class="hero-proof an-up">
-        <div class="proof-item"><strong>17+</strong><span>Projects Delivered</span></div>
-        <div class="proof-divider"></div>
-        <div class="proof-item"><strong>10+</strong><span>Happy Clients</span></div>
-        <div class="proof-divider"></div>
-        <div class="proof-item"><strong>2+</strong><span>Years Experience</span></div>
+      <div class="hero-links an">
+        <a href="https://www.linkedin.com/in/farhan-yousaf-37a256251" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/farhanyousafbhatti16" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@FarhanDevPortfolio" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100008825046900" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
-    <div class="hero-right an-up">
-      <div class="hero-visual">
-        <!-- Outer orbit ring -->
-        <div class="orbit orbit-1">
-          <div class="orbit-badge ob1">Laravel</div>
-          <div class="orbit-badge ob2">WordPress</div>
-          <div class="orbit-badge ob3">PHP</div>
-        </div>
-        <!-- Inner orbit ring -->
-        <div class="orbit orbit-2">
-          <div class="orbit-badge ob4">MySQL</div>
-          <div class="orbit-badge ob5">Vue.js</div>
-        </div>
-        <!-- Glow layers -->
-        <div class="img-glow g1"></div>
-        <div class="img-glow g2"></div>
-        <!-- Image container -->
-        <div class="img-hexagon">
-          <img src="picofme.png" alt="Farhan Yousaf - Web Developer in Islamabad, Pakistan" class="hero-img">
-        </div>
-        <!-- Floating cards -->
-        <div class="hero-float-card fc1"><i class="fas fa-star"></i> Top Rated</div>
-        <div class="hero-float-card fc2"><i class="fas fa-bolt"></i> Fast Delivery</div>
-        <div class="hero-float-card fc3"><i class="fas fa-heart"></i> 100% Satisfaction</div>
+    <div class="hero-visual an">
+      <div class="hv-frame">
+        <img src="picofme.png" alt="Farhan Yousaf Web Developer Islamabad" class="hv-img">
+        <div class="hv-ring"></div>
+        <div class="hv-glow"></div>
+      </div>
+      <div class="hv-tags">
+        <span class="hv-tag t1">Laravel</span><span class="hv-tag t2">WordPress</span><span class="hv-tag t3">PHP</span><span class="hv-tag t4">Vue.js</span><span class="hv-tag t5">MySQL</span><span class="hv-tag t6">WooCommerce</span>
       </div>
     </div>
   </div>
-  <div class="hero-socials an-up">
-    <span class="hs-label">Follow me</span>
-    <div class="hs-line"></div>
-    <a href="https://www.facebook.com/profile.php?id=100008825046900" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.linkedin.com/in/farhan-yousaf-37a256251" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/farhanyousafbhatti16" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-    <a href="https://wa.me/923325106196" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <!-- STATS -->
+  <div class="stats an">
+    <div class="stat-card"><div class="stat-num" data-to="17">0</div><div class="stat-label">Projects<br>Delivered</div></div>
+    <div class="stat-card"><div class="stat-num" data-to="10">0</div><div class="stat-label">Happy<br>Clients</div></div>
+    <div class="stat-card"><div class="stat-num" data-to="3">0</div><div class="stat-label">Years<br>Experience</div></div>
+    <div class="stat-card"><div class="stat-num no-plus" data-to="100">0</div><div class="stat-label">Delivery<br>Rate</div></div>
   </div>
-</section>
+</div></section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="marquee-track">
+<span>Laravel</span><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>WooCommerce</span><span>Bootstrap</span><span>Vue.js</span><span>REST API</span><span>Git</span><span>SEO</span><span>Photoshop</span><span>HTML5</span><span>CSS3</span>
+<span>Laravel</span><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>WooCommerce</span><span>Bootstrap</span><span>Vue.js</span><span>REST API</span><span>Git</span><span>SEO</span><span>Photoshop</span><span>HTML5</span><span>CSS3</span>
+</div></div>
 
 <!-- SERVICES -->
-<section class="sec" id="about">
-  <div class="wrap">
-    <div class="sec-top"><span class="sec-tag">What I Do</span><h2 class="sec-h2">Services that help your<br>business <em>stand out</em></h2></div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="sc-icon"><i class="fas fa-laptop-code"></i></div>
-        <h3>Website Development</h3>
-        <p>Custom-built websites using Laravel &amp; WordPress that load fast, look stunning, and convert visitors into customers.</p>
-      </div>
-      <div class="service-card">
-        <div class="sc-icon"><i class="fas fa-shopping-cart"></i></div>
-        <h3>eCommerce Stores</h3>
-        <p>Online stores with WooCommerce — product management, secure payments, and smooth shopping experiences.</p>
-      </div>
-      <div class="service-card">
-        <div class="sc-icon"><i class="fas fa-search"></i></div>
-        <h3>SEO Optimization</h3>
-        <p>Get found on Google. I optimize your website to rank higher and bring in more organic traffic.</p>
-      </div>
-      <div class="service-card">
-        <div class="sc-icon"><i class="fas fa-paint-brush"></i></div>
-        <h3>Graphic Design</h3>
-        <p>Eye-catching logos, flyers, and brand visuals that make your business look professional and memorable.</p>
-      </div>
-    </div>
+<section class="sec sec-tint" id="services"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">What I Do</span><h2>Services built to <em>scale</em> your business</h2></div>
+  <div class="srv-grid">
+    <div class="srv"><div class="srv-ico"><i class="fas fa-laptop-code"></i></div><h3>Custom Websites</h3><p>High-performance websites with Laravel &amp; WordPress that look stunning and convert visitors into paying customers.</p><a href="#contact" class="srv-link">Get Started <i class="fas fa-arrow-right"></i></a></div>
+    <div class="srv"><div class="srv-ico"><i class="fas fa-shopping-bag"></i></div><h3>eCommerce</h3><p>Full-featured online stores with WooCommerce — inventory, secure payments, and smooth checkout experiences.</p><a href="#contact" class="srv-link">Get Started <i class="fas fa-arrow-right"></i></a></div>
+    <div class="srv"><div class="srv-ico"><i class="fas fa-chart-line"></i></div><h3>SEO &amp; Growth</h3><p>Get found on Google. I optimize every site for search engines so your business gets discovered organically.</p><a href="#contact" class="srv-link">Get Started <i class="fas fa-arrow-right"></i></a></div>
+    <div class="srv"><div class="srv-ico"><i class="fas fa-pen-nib"></i></div><h3>Brand Design</h3><p>Logos, flyers, and visual identities that make your brand memorable and professional from day one.</p><a href="#contact" class="srv-link">Get Started <i class="fas fa-arrow-right"></i></a></div>
   </div>
-</section>
+</div></section>
+
+<!-- FEATURED PROJECTS -->
+<section class="sec" id="work"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">Portfolio</span><h2>Featured <em>projects</em></h2></div>
+  <div id="flagship"></div>
+  <h3 class="sub-heading">All Projects</h3>
+  <div class="proj-grid" id="projGrid"></div>
+</div></section>
 
 <!-- EXPERIENCE -->
-<section class="sec sec-dark" id="experience">
-  <div class="wrap">
-    <div class="sec-top"><span class="sec-tag">My Journey</span><h2 class="sec-h2">Experience &amp; Education</h2></div>
-    <div class="journey-grid">
-      <div class="journey-col">
-        <h3 class="journey-heading"><i class="fas fa-briefcase"></i> Work Experience</h3>
-        <div class="journey-card"><div class="jc-date">Jul 2025 – Present</div><h4>Sales Executive</h4><p>Matchless Travels — B2B sales, airline tickets, Umrah services</p></div>
-        <div class="journey-card"><div class="jc-date">Oct 2023 – Oct 2024</div><h4>Web Development Executive</h4><p>Jazz Mosafir — Laravel &amp; WordPress apps, flight booking platforms</p></div>
-        <div class="journey-card"><div class="jc-date">2023 – Present</div><h4>Freelance Web Developer</h4><p>Building websites for UK &amp; international clients across industries</p></div>
-        <div class="journey-card"><div class="jc-date">Aug – Sep 2022</div><h4>Android Dev Intern</h4><p>Mobile app development fundamentals and testing</p></div>
-      </div>
-      <div class="journey-col">
-        <h3 class="journey-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
-        <div class="journey-card"><div class="jc-date">2019 – 2023</div><h4>BSc Computer Science</h4><p>Capital University of Science &amp; Technology</p></div>
-        <div class="journey-card"><div class="jc-date">2016 – 2018</div><h4>Intermediate (ICS)</h4><p>Punjab Group of College</p></div>
-        <div class="journey-card"><div class="jc-date">2016</div><h4>Matriculation</h4><p>Divisional Public School</p></div>
-      </div>
+<section class="sec sec-tint" id="experience"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">My Journey</span><h2>Experience &amp; Education</h2></div>
+  <div class="exp-grid">
+    <div class="exp-col"><h3 class="exp-title"><i class="fas fa-briefcase"></i> Work</h3>
+      <div class="exp-card"><span class="exp-date">2025 – Present</span><h4>Sales Executive</h4><p>Matchless Travels — B2B sales, Umrah &amp; holiday packages</p></div>
+      <div class="exp-card"><span class="exp-date">2023 – 2024</span><h4>Web Development Executive</h4><p>Jazz Mosafir — Laravel apps, GDS flight booking platforms</p></div>
+      <div class="exp-card"><span class="exp-date">2023 – Present</span><h4>Freelance Developer</h4><p>17+ websites for UK &amp; Pakistan clients across industries</p></div>
+      <div class="exp-card"><span class="exp-date">2022</span><h4>Android Dev Intern</h4><p>Mobile development fundamentals &amp; testing</p></div>
+    </div>
+    <div class="exp-col"><h3 class="exp-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+      <div class="exp-card"><span class="exp-date">2019 – 2023</span><h4>BSc Computer Science</h4><p>Capital University of Science &amp; Technology</p></div>
+      <div class="exp-card"><span class="exp-date">2016 – 2018</span><h4>Intermediate (ICS)</h4><p>Punjab Group of College</p></div>
+      <div class="exp-card"><span class="exp-date">2016</span><h4>Matriculation</h4><p>Divisional Public School</p></div>
     </div>
   </div>
-</section>
-
-<!-- WORK / PROJECTS -->
-<section class="sec" id="work">
-  <div class="wrap">
-    <div class="sec-top"><span class="sec-tag">Portfolio</span><h2 class="sec-h2">Recent projects I'm<br><em>proud</em> of</h2></div>
-    <div class="work-grid" id="workGrid"></div>
-  </div>
-</section>
+</div></section>
 
 <!-- GALLERY -->
-<section class="sec sec-dark" id="gallery">
-  <div class="wrap">
-    <div class="sec-top"><span class="sec-tag">Design Work</span><h2 class="sec-h2">Logos, Flyers &amp; Screenshots</h2></div>
-    <div class="gal-filters">
-      <button class="gf active" data-filter="all">All</button>
-      <button class="gf" data-filter="web">Websites</button>
-      <button class="gf" data-filter="logo">Logos</button>
-      <button class="gf" data-filter="flyer">Flyers</button>
-    </div>
-    <div class="gal-grid" id="galGrid"></div>
-  </div>
-</section>
+<section class="sec" id="gallery"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">Design Work</span><h2>Creative <em>portfolio</em></h2></div>
+  <div class="gal-tabs"><button class="gt active" data-f="all">All</button><button class="gt" data-f="web">Websites</button><button class="gt" data-f="logo">Logos</button><button class="gt" data-f="flyer">Flyers</button></div>
+  <div class="gal" id="gal"></div>
+</div></section>
 
 <!-- YOUTUBE -->
-<section class="sec" id="youtube">
-  <div class="wrap">
-    <div class="sec-top"><span class="sec-tag">YouTube</span><h2 class="sec-h2">Free Tutorials</h2></div>
-    <div style="text-align:center;margin-bottom:36px"><a href="https://www.youtube.com/@FarhanDevPortfolio" target="_blank" class="btn-secondary"><span>Visit Channel</span><i class="fab fa-youtube"></i></a></div>
-    <div class="yt-row">
-      <div class="yt-card"><div class="yt-vid"><iframe src="https://www.youtube.com/embed/6EaTcj3_ynQ" title="Travel Website" allowfullscreen loading="lazy"></iframe></div><p>Travel and Tours Website</p></div>
-      <div class="yt-card"><div class="yt-vid"><iframe src="https://www.youtube.com/embed/4ZhW01NzvMs" title="Laravel 12" allowfullscreen loading="lazy"></iframe></div><p>Laravel 12 Setup + DB</p></div>
-    </div>
+<section class="sec sec-tint" id="youtube"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">YouTube</span><h2>Free <em>tutorials</em></h2></div>
+  <div class="yt-grid">
+    <div class="yt-card"><div class="yt-wrap" data-yt="6EaTcj3_ynQ"><div class="yt-poster"><img src="https://img.youtube.com/vi/6EaTcj3_ynQ/hqdefault.jpg" alt="Travel Website Tutorial" loading="lazy"><div class="yt-play"><i class="fas fa-play"></i></div></div></div><p>Travel &amp; Tours Website</p></div>
+    <div class="yt-card"><div class="yt-wrap" data-yt="4ZhW01NzvMs"><div class="yt-poster"><img src="https://img.youtube.com/vi/4ZhW01NzvMs/hqdefault.jpg" alt="Laravel 12 Tutorial" loading="lazy"><div class="yt-play"><i class="fas fa-play"></i></div></div></div><p>Laravel 12 Setup + DB</p></div>
   </div>
-</section>
+</div></section>
 
 <!-- CONTACT -->
-<section class="sec sec-dark" id="contact">
-  <div class="wrap">
-    <div class="contact-layout">
-      <div class="contact-left">
-        <span class="sec-tag">Get in Touch</span>
-        <h2 class="contact-h2">Have a project?<br>Let's make it <em>happen.</em></h2>
-        <p class="contact-p">Tell me about your idea and I'll get back to you within 24 hours. No commitment — just a friendly conversation about how I can help.</p>
-        <div class="contact-details">
-          <div class="cd-item"><div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div><div><span>Location</span><p>Islamabad, Pakistan</p></div></div>
-          <div class="cd-item"><div class="cd-icon"><i class="fas fa-envelope"></i></div><div><span>Email</span><p>farhanyousafbhatti16@gmail.com</p></div></div>
-          <div class="cd-item"><div class="cd-icon"><i class="fas fa-phone"></i></div><div><span>Phone / WhatsApp</span><p>+92 332 5106196</p></div></div>
-        </div>
-        <div class="contact-socials">
-          <a href="https://www.facebook.com/profile.php?id=100008825046900" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/farhan-yousaf-37a256251" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/farhanyousafbhatti16" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <a href="https://wa.me/923325106196" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-        </div>
+<section class="sec sec-contact" id="contact"><div class="wrap">
+  <div class="sec-head"><span class="sec-chip">Contact</span><h2>Let's build something <em>great</em></h2></div>
+  <div class="ct-grid">
+    <div class="ct-info">
+      <p class="ct-desc">Have a project idea? Let's talk. I respond within 24 hours.</p>
+      <div class="ct-items">
+        <div class="ct-item"><div class="ct-ico"><i class="fas fa-map-marker-alt"></i></div><div><small>Location</small><p>Islamabad, Pakistan</p></div></div>
+        <div class="ct-item"><div class="ct-ico"><i class="fas fa-envelope"></i></div><div><small>Email</small><p>farhanbhatti644@gmail.com</p></div></div>
+        <div class="ct-item"><div class="ct-ico"><i class="fas fa-phone"></i></div><div><small>WhatsApp</small><p>+92 332 5106196</p></div></div>
       </div>
-      <div class="contact-right">
-        <form class="cf" id="contactForm" novalidate>
-          <div class="cf-row">
-            <div class="cf-field">
-              <input type="text" id="name" required placeholder=" ">
-              <label for="name">Your Name</label>
-              <div class="cf-line"></div>
-            </div>
-            <div class="cf-field">
-              <input type="email" id="email" required placeholder=" ">
-              <label for="email">Email Address</label>
-              <div class="cf-line"></div>
-            </div>
-          </div>
-          <div class="cf-field">
-            <input type="text" id="subject" required placeholder=" ">
-            <label for="subject">What's this about?</label>
-            <div class="cf-line"></div>
-          </div>
-          <div class="cf-field">
-            <textarea id="message" required placeholder=" " rows="4"></textarea>
-            <label for="message">Tell me about your project...</label>
-            <div class="cf-line"></div>
-          </div>
-          <div class="cf-actions">
-            <button type="submit" class="btn-primary btn-submit"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
-            <button type="button" id="clearForm" class="btn-clear">Clear</button>
-          </div>
-          <div id="formStatus" class="cf-status"></div>
-        </form>
+      <div class="ct-social">
+        <a href="https://www.linkedin.com/in/farhan-yousaf-37a256251" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/farhanyousafbhatti16" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/923325106196" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100008825046900" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
+    <div class="ct-form-wrap">
+      <div class="ct-steps"><div class="ct-step active" data-s="1"><span>1</span>Info</div><div class="ct-line"></div><div class="ct-step" data-s="2"><span>2</span>Message</div><div class="ct-line"></div><div class="ct-step" data-s="3"><span>3</span>Send</div></div>
+      <form class="ct-form" id="ctForm" novalidate>
+        <div class="ct-page ct-p1 ct-active"><div class="ct-field"><input type="text" id="cName" required placeholder=" "><label>Your Name</label></div><div class="ct-field"><input type="email" id="cEmail" required placeholder=" "><label>Email Address</label></div><button type="button" class="btn-fill ct-next" data-n="2"><span>Continue</span><i class="fas fa-arrow-right"></i></button></div>
+        <div class="ct-page ct-p2"><div class="ct-field"><input type="text" id="cSubject" required placeholder=" "><label>Subject</label></div><div class="ct-field"><textarea id="cMsg" required placeholder=" " rows="4"></textarea><label>Your Message</label></div><div class="ct-btns"><button type="button" class="btn-ghost ct-prev" data-p="1"><i class="fas fa-arrow-left"></i><span>Back</span></button><button type="button" class="btn-fill ct-next" data-n="3"><span>Review</span><i class="fas fa-arrow-right"></i></button></div></div>
+        <div class="ct-page ct-p3">
+          <div class="ct-review"><div class="ctr"><small>Name</small><p id="rN">—</p></div><div class="ctr"><small>Email</small><p id="rE">—</p></div><div class="ctr"><small>Subject</small><p id="rS">—</p></div><div class="ctr"><small>Message</small><p id="rM">—</p></div></div>
+          <div class="ct-via"><p>Send via:</p><label class="ct-radio"><input type="radio" name="via" value="both" checked><span></span>Email + WhatsApp</label><label class="ct-radio"><input type="radio" name="via" value="email"><span></span>Email Only</label><label class="ct-radio"><input type="radio" name="via" value="wa"><span></span>WhatsApp Only</label></div>
+          <div class="ct-btns"><button type="button" class="btn-ghost ct-prev" data-p="2"><i class="fas fa-arrow-left"></i><span>Back</span></button><button type="submit" class="btn-fill btn-send"><span>Send Message</span><i class="fas fa-paper-plane"></i></button></div>
+          <div id="ctStatus" class="ct-status"></div>
+        </div>
+      </form>
+    </div>
   </div>
-</section>
-
+</div></section>
 </main>
 
-<!-- FOOTER -->
-<footer class="footer"><div class="wrap footer-inner"><p>&copy; <span id="currentYear"></span> Farhan Yousaf. All rights reserved.</p><p>Made with <span class="fh">&#10084;</span> in Pakistan</p></div></footer>
+<footer class="foot"><div class="wrap foot-flex"><p>&copy; <span id="yr"></span> Farhan Yousaf</p><p>Made with <span class="fh">&hearts;</span> in Islamabad</p></div></footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/923325106196" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<!-- WA FLOAT -->
+<div class="wa-box">
+  <div class="wa-msg" id="waMsg"><p>Need a website? <strong>Let's chat!</strong></p><button class="wa-close" id="waClose">&times;</button></div>
+  <a href="https://wa.me/923325106196?text=Hi%20Farhan!%20I%20need%20a%20website." target="_blank" rel="noopener" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+</div>
 
-<script src="min.js"></script>
+<script src="min.js" defer></script>
 </body>
 </html>
